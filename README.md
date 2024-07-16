@@ -18,11 +18,8 @@ KnowYourClient is a comprehensive JavaScript library for detecting and analyzing
 const clientInfo = detectClientInfo();
 
 console.log("Browser:", clientInfo.browser.name, clientInfo.browser.version);
-
 console.log("OS:", clientInfo.os.name, clientInfo.os.version);
-
 console.log("Device:", clientInfo.device.type, clientInfo.device.model);
-
 console.log("Engine:", clientInfo.engine.name, clientInfo.engine.version);
 
 |     Property     |   Type  |            Description            |
@@ -48,8 +45,6 @@ const clientInfo = detectClientInfo();
 if (clientInfo.browser.name === "Chrome" && parseFloat(clientInfo.browser.version) >= 90) {
   console.log("You're using a recent version of Chrome!");
 }
-
-const clientInfo = detectClientInfo();
 
 if (clientInfo.device.type === "Mobile") {
   console.log("You're using a mobile device!");
